@@ -110,6 +110,11 @@ ul li{
   color: grey;
 }
 
+.time {
+    font-size: 70%;
+    padding-top: 20px;
+}
+
 
 @media (max-width: 1000px) {
 

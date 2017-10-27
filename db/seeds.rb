@@ -8,21 +8,26 @@
 
 Task.destroy_all
 
-Task.create!([{
-  title: "Pimp this app",
-  description: "Pimp this TODO app and make it work as perfect as possible."
-},
-{
-  title: "Sign in for workshops",
-  description: "Fill in the workshops registration form and click 'submit'!"
-},
-{
-  title: "Empty your stomach",
-  description: "Prepare your stomach for pizza during workshops"
-},
-{
-  title: "Tell the world about the workshops!"
-}
-])
+Task.create!(
+  [{
+    title: 'Pimp this app',
+    description: 'Pimp this TODO app and make it work as perfect as possible.',
+    time: '2017-09-10 12:54:00 UTC'
+  },
+   {
+     title: 'Sign in for workshops',
+     description: "Fill in the workshops registration form and click 'submit'!",
+     time: '2015-01-02 17:28:00 UTC'
+   },
+   {
+     title: 'Empty your stomach',
+     description: 'Prepare your stomach for pizza during workshops',
+     time: '2016-08-27 17:28:00 UTC'
+   },
+   {
+     title: 'Tell the world about the workshops!',
+     time: '2017-10-15 22:30:00 UTC'
+   }]
+)
 
 p "Created #{Task.count} tasks"

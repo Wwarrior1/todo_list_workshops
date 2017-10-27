@@ -10,6 +10,7 @@ class TasksController < ApplicationController
   end
 
   def create
+    # binding.pry
     @task = Task.new(task_params)
 
     if @task.save
@@ -31,6 +32,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:description)
+    params.require(:task).permit(:description, :title, :time)
   end
 end
