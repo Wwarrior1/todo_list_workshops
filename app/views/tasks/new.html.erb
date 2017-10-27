@@ -1,0 +1,38 @@
+<div class='main-content'>
+  <%= form_for(@task, url: tasks_path, html: { class: 'basic' }) do |f| %>
+
+      <div class='title-row'>
+        <h1>Add New Task</h1>
+        <div class='button'>
+          <%= link_to 'Tasks list', tasks_path %>
+        </div>
+        <% if @task.errors.any? %>
+        <div>
+          <ul>
+          <% @task.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+        <% end %>
+      </div>
+
+      <div class='row field'>
+        <label>
+          <span>Title</span>
+          <%= f.text_field :title %>
+        </label>
+      </div>
+
+      <div class='row field'>
+        <label>
+          <span>Description</span>
+          <%= f.text_area :description %>
+        </label>
+      </div>
+
+      <div class='row'>
+        <button type="submit">Add it and Do it!</button>
+      </div>
+  <% end %>
+</div>
