@@ -1,22 +1,51 @@
 <div class='main-content'>
   <div class='basic'>
-    <p id='notice'><%= notice %></p>
+    <div class="card">
+      <h1 class="card-header">
+        Tasks
+      </h1>
+      <div class="card-body">
+        <% if notice %>
+            <div class='alert alert-info'>
+            <span style="font-weight: normal">
+              <%= notice %>
+            </span>
+            </div>
+        <% end %>
 
-    <h1>Tasks</h1>
-    <div class='button'>
-      <%= link_to 'New Task', new_task_path %>
-    </div>
-    <% @tasks.each do |task| %>
-      <div class='list'>
-        <table>
-          <tbody>
-            <tr><td><%= task.title %></td><td rowspan='2' class='right-link'><%= link_to 'Remove/Done', task, method: :delete, data: { confirm: 'Sure that you dont have to do this task?' } %></td></tr>
-            <tr><td class='description'><%= task.description %></td></tr>
-            <tr><td class='time'><%= task.time %></td></tr>
-          </tbody>
-        </table>
+        <div class='btn btn-sm button'>
+          <%= link_to 'New Task', new_task_path, :class => 'btn btn-sm btn-outline-success' %>
+        </div>
+        <% @tasks.each do |task| %>
+            <div class='list'>
+
+              <div class="content-left">
+                <h5 class="title">
+                  <%= task.title %>
+                </h5>
+
+                <p class="description">
+                  <%= task.description %>
+                </p>
+
+                <p class="time">
+                  (<b>Deadline:</b> <%= distance_of_time_in_words_to_now(task.time) %>)
+                  <%= task.time.strftime('%H:%M:%S %d.%m.%Y') %>
+                </p>
+
+              </div>
+
+              <div class="content-right">
+                <div class="btn btn-sm">
+                  <%= link_to 'Done', task, method: :delete,
+                              data: {confirm: 'Sure that you dont have to do this task?'},
+                              :class => 'btn btn-sm btn-outline-danger' %>
+                </div>
+              </div>
+
+            </div>
+        <% end %>
       </div>
-    <% end %>
-    <br>
+    </div>
   </div>
 </div>

@@ -5,7 +5,7 @@ html{
 .basic{
   max-width: 640px;
   margin: 0 auto;
-  padding: 55px;
+  padding: 20px 40px;
   box-sizing: border-box;
 
   background-color:  #ffffff;
@@ -27,30 +27,30 @@ html{
 
 /* The form title */
 
-.basic h1{
-  display: inline-block;
-  box-sizing: border-box;
-  color:  #4c565e;
-  font-size: 24px;
-  padding: 0 10px 15px;
-  border-bottom: 2px solid #6caee0;
-  margin: 0;
-}
+/*.basic h1{*/
+  /*display: inline-block;*/
+  /*box-sizing: border-box;*/
+  /*color:  #4c565e;*/
+  /*font-size: 24px;*/
+  /*padding: 0 10px 15px;*/
+  /*border-bottom: 2px solid #6caee0;*/
+  /*margin: 0;*/
+/*}*/
 
 .basic .row > label span{
   display: inline-block;
   box-sizing: border-box;
   color: #5F5F5F;
-  width: 180px;
+  width: 130px;
   text-align: right;
   vertical-align: top;
-  padding: 12px 25px;
+  padding: 12px 15px;
 }
 
 .basic input{
   color:  #5f5f5f;
   box-sizing: border-box;
-  width: 240px;
+  width: 340px;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   padding: 12px;
   border: 1px solid #dbdbdb;
@@ -70,7 +70,7 @@ html{
   background-color: #ffffff;
   color:  #5f5f5f;
   box-sizing: border-box;
-  max-width: 240px;
+  max-width: 340px;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   padding: 12px 8px;
   border: 1px solid #dbdbdb;
@@ -79,7 +79,7 @@ html{
 .basic textarea{
   color:  #5f5f5f;
   box-sizing: border-box;
-  width: 240px;
+  width: 340px;
   height: 80px;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   font: normal 13px sans-serif;
@@ -107,18 +107,9 @@ html{
   width: auto;
 }
 
-.basic button{
-  display: block;
-  border-radius: 2px;
-  background-color:  #6caee0;
-  color: #ffffff;
-  font-weight: bold;
-  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  padding: 14px 22px;
-  border: 0;
-  margin: 40px 183px 0;
+.field-header {
+    font-weight: normal;
 }
-
 
 .error {
   border: 1px solid #d37171;

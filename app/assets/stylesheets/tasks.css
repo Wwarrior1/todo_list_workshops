@@ -1,153 +1,129 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-	background-color: #efefef;
+html {
+    background-color: #efefef;
 }
 
-body{
-	font:14px/1.5 Arial, Helvetica, sans-serif;
-	margin:0;
+body {
+    font: 14px Roboto, sans-serif;
+    margin: 0;
 }
 
-
-header{
-  box-sizing: border-box;
-	text-align: center;
-  width: 100%;
-  padding: 25px 40px;
-  background-color: #673AB7;
-  overflow: hidden;
+header {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 25px 40px;
+    background-color: #673AB7;
+    overflow: hidden;
 }
 
-
-header h1{
-  float: left;
-	font: normal 24px/1.5 'Open Sans', sans-serif;
-	color: #fff;
+header h1 {
+    float: left;
+    font: normal 24px 'Roboto', sans-serif;
+    color: #fff;
 }
 
-header a{
-  color:#fff;
-  float: right;
-  text-decoration: none;
-  display: inline-block;
-  padding: 13px 50px;
-  border-radius: 3px;
-  font: bold 14px/1 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  background-color:#F05283;
+header a {
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 50px;
+    border-radius: 3px;
+    font: bold 14px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background-color: #F05283;
 
 }
 
 ul {
-  list-style: none;
-  border-bottom: 1px solid #EAEAEA;
-  background-color: #FFF;
-  padding: 20px;
-  margin-top: 0;
-  text-align: center;
-  margin-bottom: 75px;
+    list-style: none;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 75px;
 }
 
 .button {
-  padding-top: 20px;
-}
-
-.button a{
-  text-decoration: none;
-  color: #FFF;
-  text-align: left;
-  background-color: #BCB8C2;
-  padding: 10px 16px;
-  border-radius: 2px;
-  opacity: 0.8;
-  font-size: 16px;
-  display: inline-block;
-  margin: 4px;
-  line-height: 1;
-  outline: none;
-
-  transition: 0.2s ease;
-}
-
-ul li a.active{
-  background-color: #F05283;
-  pointer-events: none;
-}
-
-ul li a:hover {
-  opacity: 1;
-}
-
-
-ul li{
-  display: inline-block;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .list {
-  border-bottom: 1px solid #EAEAEA;
-  background-color: #FFF;
-  padding: 20px;
-  margin-top: 0;
-  text-align: left;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #FFF;
+    padding: 10px 0;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.right-link {
-  text-align: right;
-  width: 10%;
+.content-left {
+    width: 80%;
+}
+
+.content-right {
+    width: 20%;
+    text-align: right;
+}
+
+.title {
+    font-weight: 600;
 }
 
 .description {
-  font-style: italic;
-  font-size: 90%;
-  padding-top: 20px;
-  color: grey;
+    font-weight: normal;
+    color: grey;
 }
 
 .time {
-    font-size: 70%;
-    padding-top: 20px;
+    font-size: 80%;
+    font-weight: normal;
+    text-align: right;
 }
-
 
 @media (max-width: 1000px) {
 
+    header h1 {
+        float: none;
+    }
 
-  header h1{
-    float: none;
-  }
-
-  header a{
-    margin-top: 25px;
-    float: none;
-  }
+    header a {
+        margin-top: 25px;
+        float: none;
+    }
 
 }
 
-.main-content{
-  margin-bottom: 75px;
+.main-content {
+    margin-bottom: 75px;
 }
 
 /* -- Demo ads -- */
 
 @media (max-width: 1200px) {
-	#bsaHolder{ display:none;}
+    #bsaHolder {
+        display: none;
+    }
 }
 
 /* -- Link to Tutorialzine -- */
 
-.tz-link{
-	text-decoration: none;
-	color: #fff !important;
-	font: bold 36px Arial,Helvetica,sans-serif !important;
+.tz-link {
+    text-decoration: none;
+    color: #fff !important;
+    font: bold 36px Roboto, sans-serif !important;
 }
 
-.tz-link span{
-	color: #da431c;
+.tz-link span {
+    color: #da431c;
 }
